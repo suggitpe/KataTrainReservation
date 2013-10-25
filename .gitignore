@@ -1,4 +1,5 @@
 train/*
 trains/*
 *.pyc
+unittest
 
