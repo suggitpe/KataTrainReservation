@@ -6,6 +6,7 @@ class BookingReferenceAccessorTest(unittest.TestCase):
 	def test_callsOutToBookingRefServiceForAReference(self):
 		accessor = BookingReferenceAccessor()
 		bookingRef = accessor.getBookingReference()		
-		assert bookingRef == "75bcd15"
+		assert len(bookingRef) > 4
+		assert bookingRef[0:4] == '75bc' 
 
 
